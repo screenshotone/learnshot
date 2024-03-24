@@ -1,13 +1,12 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "types": [
-      "node"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx",
-  }
+    "compilerOptions": {
+        "target": "ESNext",
+        "strict": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "types": ["node"],
+        "outDir": "./build"
+    },
+    "exclude": ["node_modules"],
+    "include": ["**/*.ts"]
 }

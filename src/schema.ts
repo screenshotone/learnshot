@@ -1,6 +1,10 @@
 import { z } from "@hono/zod-openapi";
 
 export const ScreenshotOptionsSchema = z.object({
+    url: z.string().url().openapi({
+        description: "A website URL.",
+        example: "https://example.com",
+    }),
     block_cookie_canners: z.boolean().default(true).openapi({
         description: "Render clean screenshots.",
         example: false,
@@ -22,6 +26,8 @@ export const ScreenshotOptionsSchema = z.object({
         example: false,
     }),
 });
+
+export type ScreenshotOptions = z.infer<typeof ScreenshotOptionsSchema>;
 
 export const ScreenshotResultSchema = z
     .object({
