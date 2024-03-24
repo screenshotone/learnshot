@@ -1,7 +1,7 @@
 learnshot
 =========
 
-`learnshot` is a screenshot API built for fun and sharing my few years of experience in building [ScreenshotOne](https://screenshotone.com/).
+`learnshot` is a screenshot API built for fun and [sharing my experience](https://screenshotone.com/blog/building-screenshot-api/) of building [ScreenshotOne](https://screenshotone.com/). 
 
 ## Play with it
 
